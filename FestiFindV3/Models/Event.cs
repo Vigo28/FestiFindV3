@@ -15,7 +15,7 @@ namespace FestFindV2.Models
         [Required]
         public string Location { get; set; }
         [Required]
-        public string Date_Time { get; set; }
+        public DateTime Date_Time { get; set; }
         [Required]
         public float Costs { get; set; }
         [Required]

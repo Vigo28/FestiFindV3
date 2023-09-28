@@ -7,8 +7,6 @@ namespace FestFindV2.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Date_Time { get; set; }
-        [Required]
         public int EventId { get; set; }
         [Required]
         public bool Payed { get; set; }

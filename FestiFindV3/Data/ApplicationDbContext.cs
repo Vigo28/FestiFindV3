@@ -48,7 +48,6 @@ namespace FestiFindV3.Data
             modelBuilder.Entity<Order>(entity =>
             {
                 entity.HasKey(o => o.Id);
-                entity.Property(o => o.Date_Time).IsRequired();
                 entity.Property(o => o.EventId).IsRequired();
                 entity.Property(o => o.Payed).IsRequired();
             });

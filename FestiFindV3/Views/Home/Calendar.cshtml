@@ -55,7 +55,7 @@
                         string eventUrl = ""; // URL for the event details page
                         foreach (var e in Model)
                         {
-                            if (DateTime.TryParse(e.Date_Time, out DateTime eventDate) && eventDate.Year == loopDate.Year && eventDate.Month == loopDate.Month && eventDate.Day == day)
+                            if (e.Date_Time.Year == loopDate.Year && e.Date_Time.Month == loopDate.Month && e.Date_Time.Day == day)
                             {
                                 eventTitle = e.Name;
                                 eventUrl = "/Events/Details/" + e.Id;
